@@ -46,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "delete movie",
+			"name": "update movie",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -54,7 +54,7 @@
 			"response": []
 		},
 		{
-			"name": "update movie",
+			"name": "delete movie",
 			"request": {
 				"method": "GET",
 				"header": []
