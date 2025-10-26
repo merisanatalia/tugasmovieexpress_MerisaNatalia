@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "48c08f71-3f8b-4a6c-b658-bd3b0b726df6",
+		"name": "tugas movie merisa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49481141",
+		"_collection_link": "https://sasamerisa05-4086255.postman.co/workspace/sasa's-Workspace~1663b0bb-355d-4175-8231-ca5403cdb36e/collection/49481141-48c08f71-3f8b-4a6c-b658-bd3b0b726df6?action=share&source=collection_link&creator=49481141"
+	},
+	"item": [
+		{
+			"name": "create movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"judul\" : \"Doraemon\",\r\n  \"tahunRilis\": \"2010\",\r\n  \"sutradara\": \"Kristoper\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list movie",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete movie",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update movie",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
