@@ -2,8 +2,11 @@ import express from "express";
 import api from "./route/api.js";
 import database from "./config/database.js"
 import movieModel from "./models/movieModel.js";
+import cors from "cors"
 
 const app = express()
+
+app.use(cors())
 app.use(express.json())
 
 app.use('/api',api)
