@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import UserModel from "./userModel.js";
 
 const MovieSchema = new mongoose.Schema(
     {
@@ -17,11 +18,17 @@ const MovieSchema = new mongoose.Schema(
             type : String,
             required : true,
             trim : true,
+        },
+
+        // Field relasi
+        createdBy: {
+            type : mongoose.Types.ObjectId,
+            ref : UserModel // referensi ke model user
         }
     },
     {
         timestamps : true,
-    }
+    },
 );
 const movieModel = mongoose.model("movie", MovieSchema);
 
