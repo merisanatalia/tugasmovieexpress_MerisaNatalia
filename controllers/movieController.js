@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 import MovieModel from "../models/movieModel.js"
+import movieModel from "../models/movieModel.js";
 
 export const movies = async (req, res)=>{
     try {
-        const movies = await MovieModel.find({
+        const movies = await movieModel.find({
             createdBy: req.user?.user_id
         }).sort({createdAt : -1});
 
