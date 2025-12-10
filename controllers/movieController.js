@@ -140,7 +140,7 @@ export const deleteMovie = async (req, res)=>{
 
         const deletedMovie = await movieModel.findOneAndDelete({
             _id: id,
-            createdBy: req.user?.user.id,
+            createdBy: req.user?.user_id,
         });
 
         if (!deletedMovie) {
@@ -156,7 +156,7 @@ export const deleteMovie = async (req, res)=>{
     }catch (error) {
         res.status(500).json({
             message: "terjasi kesalahan pada server",
-            error : error, message,
+            error : error.message,
             data: null
         })
     }
